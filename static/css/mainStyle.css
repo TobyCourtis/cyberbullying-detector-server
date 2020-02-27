@@ -1,0 +1,23 @@
+head{
+    word-wrap: break-word;
+}
+body{
+    background-color: #EEEEEE;
+    font-family: Helvetica, Ariel, Sans-serif;
+    padding: 20px 20px 20px 20px;
+    word-wrap: break-word;
+}
+#outEvent{
+    font-family: Helvetica, Ariel, Sans-serif;
+    padding: 10px 10px 10px 10px;
+}
+#main{
+    padding: 0px 20px 20px 20px;
+}
+#tester{
+    padding: 0px 20px 20px 20px;
+}
+th, td{
+    padding: 5px 5px 5px 5px;
+}
+table { border-collapse: separate; border-spacing: 5px; }

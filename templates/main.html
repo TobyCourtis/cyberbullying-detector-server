@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<hmtl lang="en">
+    <head>
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' style-src 'self' 'unsafe-inline';">
+        <title>Cyberbullying Detector</title>
+        <!-- IMPORTING STUFF -->
+        <!--<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>-->
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../static/css/mainStyle.css"/>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--<meta "content_security_policy": "default-src 'self' style-src 'self' 'unsafe-inline';">-->
+        <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self'; child-src 'none'; object-src 'none'">-->
+        <!--"default-src 'self' style-src 'self' 'unsafe-inline';"-->
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+        <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+    </head>
+    <body>
+        <!-- NAVIGATION BAR HERE -->
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Bullying Detector</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="/">Home</a></li>
+                    <!--<li><a href="#">Page 2</a></li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+        <!-- MAIN DIV + CONTENT HERE -->
+        <div id="main">
+            <h1>Cyberbullying Detector</h1>
+            <form action = "http://82.20.230.42:58080/classify" method = "post" autocomplete="off">
+                Enter text for classification:<br>
+          		<input id="textClassify" name="classify_text">
+          		<br>
+                <br>
+                <input type = 'submit' value = "submit"/>
+            </form>
+            <br>
+            <!-- <button onclick="inputSearch()">Submit</button> -->
+            <h2>Classification: {{ classification }}</h2>
+        </div>
+        <div>
+        </div>
+    </body>
+</html>
