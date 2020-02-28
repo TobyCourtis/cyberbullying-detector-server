@@ -21,15 +21,15 @@ else:
     print("Not using SSL")
 
 # classifier file name here
-filename = "/home/kingslanding/Documents/Cyberbullying Server/_Code_/data/classifiers/classifier_combined_data_json80.sav"
+filename = "./data/classifiers/classifier_combined_data_json80.sav"
 
 loaded_model = pickle.load(open(filename, 'rb'))
 
 print("loading vectors...")
-with open('/home/kingslanding/Documents/Cyberbullying Server/_Code_/data/vectors/index_map.pkl', 'rb') as f:
+with open('./data/vectors/index_map.pkl', 'rb') as f:
     index_map = pickle.load(f)
 
-vectors2 = np.load("/home/kingslanding/Documents/Cyberbullying Server/_Code_/data/vectors/vectors-float32.npz")
+vectors2 = np.load("./data/vectors/vectors-float32.npz")
 vectors = vectors2['arr_0'][:]
 print("Done loading vectors... ")
 
@@ -115,6 +115,7 @@ def js_binary():
 
 if __name__ == '__main__':
     if(use_ssl):
-        app.run(use_reloader=False,host="0.0.0.0",port=8080,ssl_context=("./ssl_certificates/cert.pem","./ssl_certificates/key.pem"),debug=False)
+        # use "0.0.0.0" to host from server IP
+        app.run(use_reloader=False,host="127.0.0.1",port=8080,ssl_context=("./ssl_certificates/cert.pem","./ssl_certificates/key.pem"),debug=False)
     else:
-        app.run("0.0.0.0", "8080")
+        app.run("127.0.0.1", "8080")
