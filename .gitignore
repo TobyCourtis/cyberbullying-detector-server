@@ -3,3 +3,6 @@
 
 # private and public key files
 *.pem
+
+# DS_Store
+*.DS_Store
