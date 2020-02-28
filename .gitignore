@@ -1,2 +1,5 @@
 # files that are too large
 *.npz
+
+# private and public key files
+*.pem
