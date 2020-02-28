@@ -5,8 +5,7 @@ How to run the Server:
 
 1) Aquire SSL Certificates if requiring https
    - Label 'cert.pem' and 'key.pem' then transfer into 'ssl_certificates' directory
-2) Download large (2GB) vectors file
-   - https://drive.google.com/open?id=1H6uSF-L3drCNzaMyKOzeUCbrH0FxGseg
+2) Download large (2GB) vectors file [here](https://drive.google.com/file/d/1H6uSF-L3drCNzaMyKOzeUCbrH0FxGseg/view)
    - Move the downloaded file into /data/vectors/
 3) python3 server.py
    - pip(3) install works for all libraries (flask_talisman, pandas, flask_sslify, scikit-learn==0.19)
