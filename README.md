@@ -16,4 +16,4 @@ How to run the Server:
 
 
 Coming soon:
-  Docker Container for easy install
+  Docker container for easy install
