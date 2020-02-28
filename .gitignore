@@ -2,7 +2,10 @@
 *.npz
 
 # private and public key files
-*.pem
+key.pem
 
 # DS_Store
 *.DS_Store
+
+# @eaDir folders
+/@eaDir/*
