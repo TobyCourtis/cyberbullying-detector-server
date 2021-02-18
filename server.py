@@ -50,6 +50,13 @@ app = Flask(__name__)
 if(use_ssl):
     Talisman(app)
 
+@app.after_request
+def after_request(response):
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    response.headers.add('Access-Control-Allow-Headers', 'Content-Type,Authorization')
+    response.headers.add('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE')
+    return response
+
 @app.route('/')
 def output():
     return render_template("main.html", classification="Nothing has been input for classification")
