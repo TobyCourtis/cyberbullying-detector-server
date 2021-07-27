@@ -9,3 +9,6 @@ key.pem
 
 # @eaDir folders
 /@eaDir/*
+
+# .idea
+/.idea/
